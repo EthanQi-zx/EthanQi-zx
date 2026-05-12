@@ -1,0 +1,154 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {第一章}引言}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}课题背景与研究意义}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}研究目的}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}研究内容与核心方法}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}论文结构}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第二章}国外文献资料的分析和综述}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第三章}前导知识简介}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}视觉Transformer}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}视觉-语言预训练模型}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}注意力机制与CLS Token}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Token裁剪与模型加速}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}软裁剪与硬裁剪}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}多模态理解任务}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第四章}系统分析和总体设计}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}系统分析}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}设计目标}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}性能目标}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}效率目标}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}通用性目标}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}可扩展性目标}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}总体设计方案}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}系统模块划分}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}数据处理模块}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}基线推理模块}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}启发式裁剪模块}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.4}可学习评分模块}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.5}评测与统计模块}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}关键设计原则}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}尽量少改动底座原则}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2}统一评价标准}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.3}训练与推理分离}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.4}面向多任务分析}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第五章}详细设计与实现}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}设计思路}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces ViT-B/32流程图}}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}启发式token裁剪实现}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}基于L2范数的裁剪}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}基于CLS attention的裁剪}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}硬裁剪与计算收益}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}gating head的设计与实现}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}模块结构}{13}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces GatingHead流程图}}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}设计原因}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}训练策略设计}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}软裁剪预训练}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}硬裁剪推理}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3}微调策略}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}多任务实验流程实现}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}图文检索任务实现}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}视觉问答任务实现}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3}图文推理任务实现}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}评价指标设计}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.1}性能指标}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.2}效率指标}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}实现中的若干技术细节}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1}文本特征缓存}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2}单进程推理}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.3}keep ratio与裁剪层选择}{15}{}\protected@file@percent }
+\gdef \LT@i {\LT@entry 
+    {4}{66.48273pt}\LT@entry 
+    {4}{50.88445pt}\LT@entry 
+    {4}{50.88445pt}\LT@entry 
+    {1}{53.66684pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {第六章}研究结果与分析}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}基于CLS注意力的启发式Token裁剪单任务结果}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}图文检索任务(Flickr30k)}{16}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces keep ratio=0.5时各个裁剪层的效果}}{16}{}\protected@file@percent }
+\newlabel{tab:fixKeepRatio}{{1}{16}{图文检索任务(Flickr30k)}{table.1}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{75.28761pt}\LT@entry 
+    {4}{50.88445pt}\LT@entry 
+    {4}{50.88445pt}\LT@entry 
+    {1}{53.66684pt}}
+\gdef \LT@iii {\LT@entry 
+    {4}{66.48273pt}\LT@entry 
+    {1}{75.28761pt}\LT@entry 
+    {4}{56.7865pt}\LT@entry 
+    {1}{65.66367pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Layer=9时各个保留比例的效果}}{17}{}\protected@file@percent }
+\newlabel{tab:fixLayer}{{2}{17}{图文检索任务(Flickr30k)}{table.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}视觉问答任务(ScienceQA)}{17}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 小样本时的网格搜索}}{17}{}\protected@file@percent }
+\newlabel{tab:max=500}{{3}{17}{视觉问答任务(ScienceQA)}{table.3}{}}
+\gdef \LT@iv {\LT@entry 
+    {4}{66.48273pt}\LT@entry 
+    {1}{75.28761pt}\LT@entry 
+    {4}{56.7865pt}\LT@entry 
+    {1}{65.66367pt}}
+\gdef \LT@v {\LT@entry 
+    {4}{66.48273pt}\LT@entry 
+    {1}{75.28761pt}\LT@entry 
+    {4}{56.7865pt}\LT@entry 
+    {1}{65.66367pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 小样本时的网格搜索(续)}}{18}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces 特定配置下全量验证集}}{18}{}\protected@file@percent }
+\newlabel{tab:fullVal}{{4}{18}{视觉问答任务(ScienceQA)}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces 特定配置下全量测试集}}{18}{}\protected@file@percent }
+\newlabel{tab:fullTest}{{5}{18}{视觉问答任务(ScienceQA)}{table.5}{}}
+\gdef \LT@vi {\LT@entry 
+    {4}{66.48273pt}\LT@entry 
+    {1}{75.28761pt}\LT@entry 
+    {4}{56.7865pt}\LT@entry 
+    {1}{65.66367pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces 特定配置下全量测试集(续)}}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}图文推理任务(Winoground)}{19}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces 全量网格搜索}}{19}{}\protected@file@percent }
+\newlabel{tab:fullData}{{6}{19}{图文推理任务(Winoground)}{table.6}{}}
+\gdef \LT@vii {\LT@entry 
+    {1}{42.13501pt}\LT@entry 
+    {1}{57.28761pt}\LT@entry 
+    {1}{91.37495pt}\LT@entry 
+    {1}{54.18001pt}\LT@entry 
+    {1}{54.18001pt}\LT@entry 
+    {4}{38.7865pt}\LT@entry 
+    {4}{38.7865pt}\LT@entry 
+    {4}{38.7865pt}\LT@entry 
+    {4}{38.7865pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces 全量网格搜索(续)}}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}跨任务Pareto最优配置分析}{20}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces 三组非支配解}}{20}{}\protected@file@percent }
+\newlabel{tab:pareto}{{7}{20}{跨任务Pareto最优配置分析}{table.7}{}}
+\gdef \LT@viii {\LT@entry 
+    {4}{125.39162pt}\LT@entry 
+    {4}{44.7865pt}\LT@entry 
+    {4}{44.7865pt}\LT@entry 
+    {4}{44.7865pt}\LT@entry 
+    {1}{60.18001pt}\LT@entry 
+    {1}{60.18001pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces 三组非支配解(续)}}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}可学习Gating Head裁剪模块结果}{21}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces 使用打分头之后的效果对比}}{21}{}\protected@file@percent }
+\newlabel{tab:gating head}{{8}{21}{可学习Gating Head裁剪模块结果}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces 使用打分头之后的效果对比(续)}}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}关键结果分析与讨论}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}CLS注意力的有效性}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}任务敏感性差异}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}软-硬裁剪的训练与推理适配}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}效率优化价值}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}本节小结}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第七章}结论}{23}{}\protected@file@percent }
+\bibcite{radford2021}{1}
+\bibcite{cherti2022}{2}
+\bibcite{liu2023}{3}
+\bibcite{yu2024}{4}
+\bibcite{chen2026}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}主要创新点}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}未来工作展望}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第八章}参考文献}{24}{}\protected@file@percent }
+\bibcite{dosovitskiy2020}{6}
+\bibcite{zhang2025}{7}
+\bibcite{young2014}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {第九章}致谢}{25}{}\protected@file@percent }
+\gdef \@abspage@last{32}
